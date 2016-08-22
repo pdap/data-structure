@@ -132,6 +132,8 @@
 ````
 ## 参考资料
 > [循环双链表](http://www.nowamagic.net/librarys/veda/detail/1876)
-> ![du](./dulnode-1.png)
+> ![du1](./imgs/dulnode-1.png)
+> ![du2](./imgs/dulnode-2.png)
+> ![du3](./imgs/dulnode-3.png)
 
 ------
