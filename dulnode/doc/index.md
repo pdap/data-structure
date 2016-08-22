@@ -91,7 +91,7 @@
     // 尾插追加
     addBefore:function(pos,data){
         var p =this;
-    	console.log(p);
+    	//console.log(p);
       var s = new DuLNode(pos,data, p.prior, p);
       p.prior.next=s;
       p.prior = s;
@@ -128,5 +128,10 @@
    return llist;
   }
  var test = arr2LList([1,2,3,4,5,6,7,8,9,10]);
+ console.log(test,test.next,test.next.next,test.prior,test.prior.prior,test.findByValue(10),test.findByPos(0));
 ````
+## 参考资料
+> [循环双链表](http://www.nowamagic.net/librarys/veda/detail/1876)
+> ![du](./dulnode-1.png)
+
 ------

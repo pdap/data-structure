@@ -120,7 +120,7 @@
     // 尾插追加
     addBefore:function(pos,data){
         var p =this;
-        console.log(p);
+        //console.log(p);
       var s = new DuLNode(pos,data, p.prior, p);
       p.prior.next=s;
       p.prior = s;
@@ -156,7 +156,8 @@
    }
    return llist;
   }
- var test = arr2LList([1,2,3,4,5,6,7,8,9,10]);</script><div class="highlight"><pre><code class="javascript"> <span class="comment">/**
+ var test = arr2LList([1,2,3,4,5,6,7,8,9,10]);
+ console.log(test,test.next,test.next.next,test.prior,test.prior.prior,test.findByValue(10),test.findByPos(0));</script><div class="highlight"><pre><code class="javascript"> <span class="comment">/**
   * [DuLNode 循环双链表的js实现]
   * @param {number||string}   pos   指针
   * @param {object||array||sting||number}   data  数组中的元素
@@ -235,7 +236,7 @@
     <span class="comment">// 尾插追加</span>
     addBefore:<span class="function"><span class="keyword">function</span><span class="params">(pos,data)</span>{</span>
         <span class="keyword">var</span> p =<span class="keyword">this</span>;
-        console.log(p);
+        <span class="comment">//console.log(p);</span>
       <span class="keyword">var</span> s = <span class="keyword">new</span> DuLNode(pos,data, p.prior, p);
       p.prior.next=s;
       p.prior = s;
@@ -271,7 +272,12 @@
    }
    <span class="keyword">return</span> llist;
   }
- <span class="keyword">var</span> test = arr2LList([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]);</code></pre></div><hr>
+ <span class="keyword">var</span> test = arr2LList([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]);
+ console.log(test,test.next,test.next.next,test.prior,test.prior.prior,test.findByValue(<span class="number">10</span>),test.findByPos(<span class="number">0</span>));</code></pre></div><h2 id="参考资料">参考资料</h2><blockquote>
+<p><a href="http://www.nowamagic.net/librarys/veda/detail/1876">循环双链表</a>
+<img src="./dulnode-1.png" alt="du"></p>
+</blockquote>
+<hr>
 </div>
 </div>
 </div>
